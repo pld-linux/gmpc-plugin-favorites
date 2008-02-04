@@ -1,0 +1,12 @@
+diff -urN gmpc-favorites-0.15.5.0/src/Makefile.am gmpc-favorites-0.15.5.0.new/src/Makefile.am
+--- gmpc-favorites-0.15.5.0/src/Makefile.am	2007-11-29 14:54:23.000000000 +0100
++++ gmpc-favorites-0.15.5.0.new/src/Makefile.am	2008-02-04 10:43:49.064479580 +0100
+@@ -1,6 +1,6 @@
+-gmpcdir=${prefix}/share/gmpc/plugins
++pluginsdir=$(libdir)/gmpc/
+ 
+-gmpc_LTLIBRARIES = gmpcfavorites.la
++plugins_LTLIBRARIES = gmpcfavorites.la
+ 
+ gmpcfavorites_la_SOURCES=\
+ 	plugin.c
